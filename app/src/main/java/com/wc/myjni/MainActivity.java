@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView tv = (TextView) findViewById(R.id.sample_text);
-        String appKey = NativeHelper.getAppKey();
-        tv.setText(appKey);
+        int appKey = NativeHelper.getAppKey(1000);
+        tv.setText(appKey+"");
     }
 
 

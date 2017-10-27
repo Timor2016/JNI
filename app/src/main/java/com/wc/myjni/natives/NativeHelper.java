@@ -11,5 +11,5 @@ public class NativeHelper {
         System.loadLibrary("native-lib");
     }
     //获取C中隐藏的AppKey
-    public static native String getAppKey();
+    public static native int getAppKey(int s);
 }
